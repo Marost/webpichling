@@ -1,0 +1,650 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, caption{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';	content: none;}
+:focus {outline: 0;}
+ins {text-decoration: none;}
+del {text-decoration: line-through;}
+a{text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+/*--------------------------------------------------------*/
+/* DATOS GENERAPES */
+
+body{
+	background-color:#600;
+	color: #000000;	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	margin:0;
+	cursor:url(imagenes/cursor.cur);
+}
+
+p{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+}
+
+p.centro{ text-align:center;}
+p.derecha{ text-align:right;}
+p.izquierda{ text-align:left;}
+
+#superior, #contenido, #menu, #footer{
+	width:100%;
+	float:left;
+}
+
+.interior{
+	width:950px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#superior-izq{
+	width:236px;
+	float:left;
+}
+
+#superior-der{
+	width:714px;
+	float:left;
+}
+
+.barra-izq{
+	width:15px;
+	background-image:url(../imagenes/lado_izq.jpg);
+	background-repeat:repeat-y;
+}
+
+.barra-der{
+	width:15px;
+	background-image:url(../imagenes/lado_der.jpg);
+	background-repeat:repeat-y;
+}
+
+.contenido-pasto{
+	background-image:url(../imagenes/fondo.jpg);
+	background-repeat:repeat;
+}
+
+#contenido-izq{
+	width:500px;
+	float:left;
+	padding:0 0 0 10px;
+}
+
+#contenido-der{
+	width:242px;
+	float:left;
+	padding:0 0 0 10px;
+}
+
+#bienvenido, #entrevista, #columnistas{
+	width:100%;
+	float:left;
+}
+
+#cabecera-titulo{
+	width:100%;
+	height:45px;
+	background-image:url(../imagenes/barra.jpg);
+	background-repeat:repeat;
+	text-align:center;
+	float:left;
+}
+
+#contenido-bienvenido{
+	width:450px;
+	padding:10px 10px 10px 30px;
+	text-align:justify;
+	font-size:13px;
+	float:left;
+}
+
+#contenido-bienvenido-der{
+	text-align:right;
+	font-size:14px;
+	font-weight:bold;
+	padding:0 25px 0 0;
+}
+
+.espacio680{
+	width:480px;
+	height:20px;
+	float:left;
+	background-image:url(../imagenes/separaciom-hor.png);
+}
+
+.espacio100{
+	width:100%;
+	height:20px;
+	float:left;
+	background-image:url(../imagenes/separaciom-hor.png);
+}
+
+.espacio604{
+	width:450px;
+	height:20px;
+	float:left;
+	background-image:url(../imagenes/separaciom-hor.png);
+}
+
+#contenido-entrevista{
+	width:450px;
+	padding:10px 10px 10px 30px;
+	float:left;
+}
+
+#contenido-entrevista2{
+	width:645px;
+	padding:10px 10px 10px 30px;
+	float:left;
+	text-align:center;
+}
+
+#texto-entrevista-der{
+	width:265px;
+	float:left;
+	margin:0 0 0 10px;
+}
+
+#texto-entrevista-inf{
+	width:97%;
+	float:left;
+	margin:10px 0 0 0;
+}
+
+#contenido-columnistas{
+	width:450px;
+	padding:10px 10px 10px 30px;
+	float:left;
+}
+
+#contenido-columnistas2{
+	width:645px;
+	padding:10px 10px 10px 30px;
+	float:left;
+}
+
+#contenido-tabla{
+	width:95%;
+	padding:12px;
+	float:left;
+}
+
+iframe#frame {border:10px #FFF solid;}
+
+#panel-izq{
+	width:170px;
+	padding:0 0 0 10px;
+	float:left;
+}
+
+ul li{
+	list-style-position:inside;
+}
+
+/*-------------------------------------------------------*/
+.Estilo11{font-size: 24}
+.Estilo13{
+	font-size: 27px;
+	font-weight: bold;
+	color:#FFF;
+	font-family:"Arial Black";
+}
+.Estilo16 {font-size: 12px}
+.Estilo19 {
+	font-size: 24px;
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.Estilo21 {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.Estilo22 {font-size: 16px}
+
+.texto_noticia {text-align: justify;}
+
+.titulo_columna{
+	font-size:14px;
+	font-weight:bold;
+	color:#000;
+	margin-bottom:2px;
+}
+
+a:hover, a:visited, a:active, a:link {
+	font-size: 13px;
+	color: #000000;
+	font-weight: bold;
+	text-decoration:none;
+}
+
+.titulo_principal_aldtalle{
+	color:#FFF;
+	border-bottom:2px solid #600;
+	margin:0 0 2px 0;
+	line-height:18px;
+}
+
+.text_titulo_contacto{
+	color:#FFF;
+	font-weight:bold;
+}
+
+.text_subtitulo_contacto{
+	color:#000;
+	font-weight:bold;
+}
+
+.text_nombre_columnista{
+	color:#000;
+	font-weight:bold;
+	font-size:14px;
+}
+
+.text_datos_columnistas, .text_titulo_enlaces{
+	color:#600;
+	font-weight:bold;
+	font-size:12px;
+}
+
+#titulo_general{
+	/*width:100%;*/
+	width:510px;
+	height:40px;
+	float:left;
+	padding:5px 0 0 0;
+	background:url(../imagenes/barra.jpg);
+	background-repeat:repeat;
+	text-align:center;
+}
+
+.titulo_general{
+	height:40px;
+	float:left;
+	padding:5px 0 0 0;
+	background:url(../imagenes/barra.jpg);
+	background-repeat:repeat;
+	text-align:center;
+}
+
+.texto-blanco28-ArialBlack{
+	color:#FFF;
+	font-size:28px;
+	font-family:"Arial Black", Gadget, sans-serif;
+}
+
+.texto-blanco18-ArialBlack{
+	color:#FFF;
+	font-size:18px;
+	font-family:"Arial Black", Gadget, sans-serif;
+}
+
+.texto-blanco22-ArialBlack{
+	color:#FFF;
+	font-size:22px;
+	font-family:"Arial Black", Gadget, sans-serif;
+}
+
+.texto-blanco22-ArialBlack a{
+	color:#FFF;
+	font-size:22px;
+	font-family:"Arial Black", Gadget, sans-serif;
+	text-decoration:none;
+}
+
+.texto_fnd-plomo_negro{
+	color:#000;
+	background:#CCC;
+	text-align:justify;
+	font-size:12px;
+	padding:7px;
+}
+
+.texto_fnd-plomo_negro a{
+	color:#000;
+	text-align:justify;
+	font-size:12px;
+	text-decoration:none;
+}
+
+.texto-negro13-Arial{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	color:#000;
+}
+
+#titulo_columna-post{
+	width:100%;
+	float:left;
+	font-size:13px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#FFF;
+	text-align:left;
+	font-weight:bold;
+	padding:0 0 5px 0;
+	text-transform:uppercase;
+}
+
+#contenido_columna-post{
+	width:100%;
+	float:left;
+	text-align:12px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-decoration:none;
+	text-align:justify;
+}
+
+#separacion-post{
+	width:100%;
+	height:20px;
+	float:left;
+	background:url(../imagenes/separaciom-hor.png) repeat;
+}
+
+#titulo_columna{
+	width:100%;
+	float:left;
+	font-size:13px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#FFF;
+	text-align:center;
+	font-weight:bold;
+	padding:0 0 5px 0;
+	text-transform:uppercase;
+}
+
+#contenido_columna{
+	width:490px;
+	float:left;
+	text-align:12px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-decoration:none;
+	text-align:justify;
+}
+
+img#entrevista{padding:5px;}
+
+#contenido-img-descripcion{
+	width:510px;
+	float:left;
+	background-color:#CCC;
+}
+
+#imagen-entrevista{
+	width:160px;
+	float:left;
+	text-align:center;
+	background-color:#CCC;
+}
+
+#descripcion-entrevista{
+	width:330px;
+	float:left;
+}
+
+.titulo_principal{
+	font-size:24px;
+	color:#FFF;
+	text-align:center;
+	font-weight:bold;
+	background:#600;
+}
+
+.titulo_dato{
+	font-size:12px;
+	color:#000;
+	text-align:right;
+	font-weight:bold;
+}
+
+.dato{
+	font-size:13px;
+	color:#FFF;
+}
+
+.titulo_descripcion{
+	font-size:12px;
+	color:#FFF;
+	text-align:center;
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+.descripcion{
+	font-size:13px;
+	color:#FFF;
+	text-align:justify;
+}
+
+a{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #FFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.titulo_tabla{
+	font-size:12px;
+	color:#000;
+	text-align:center;
+	font-weight:bold;
+	background:#C60;
+}
+
+.anio_tabla{
+	font-size:12px;
+	color:#FFF;
+	text-align:center;
+	font-weight:bold;
+}
+
+.dato_tabla{
+	font-size:13px;
+	color:#000;
+	text-align:left;
+}
+
+.img{
+	text-align:center;
+}
+
+/*-----------------------------*/
+body#jugadores {
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-image: url(../imagenes/fondo.jpg);
+}
+
+.titulo_principal{
+	font-size:24px;
+	color:#FFF;
+	text-align:center;
+	font-weight:bold;
+	background:#600;
+}
+
+.titulo_dato{
+	font-size:12px;
+	color:#000;
+	text-align:right;
+	font-weight:bold;
+}
+
+.dato{
+	font-size:13px;
+	color:#FFF;
+}
+
+.titulo_descripcion{
+	font-size:12px;
+	color:#FFF;
+	text-align:center;
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+.descripcion{
+	font-size:13px;
+	color:#FFF;
+	text-align:justify;
+}
+
+a{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #FFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.titulo_tabla{
+	font-size:12px;
+	color:#000;
+	text-align:center;
+	font-weight:bold;
+	background:#C60;
+}
+
+.anio_tabla{
+	font-size:12px;
+	color:#FFF;
+	text-align:center;
+	font-weight:bold;
+}
+
+.dato_tabla{
+	font-size:13px;
+	color:#000;
+	text-align:left;
+}
+
+.img{text-align:center;}
+
+iframe#oficina{ 
+	border:10px #000 solid;
+	margin:10px;
+	background:#C0C0C0;
+}
+
+#panel-izq-centro{
+	width:690px;
+	float:left;
+}
+
+/* CANCHA FUTBOL */
+#cancha_futbol{
+	position:relative;
+}
+
+#arquero, #lateral_derecho, #defensa_central_izquierda, #defensa_central_derecha, #lateral_izquierdo, #volante_derecho, #volante_central, #volante_izquierdo, #extremo_derecho, #delantero, #extremo_izquierdo{
+	width:15px;
+	height:15px;
+}
+
+#arquero{
+	position:absolute;
+	left: 40px;
+	top: 87px;
+	background-image:url(../imagenes/icon_cancha_futbol.png);
+	background-position:0 15px;
+}
+#lateral_derecho{
+	position:absolute;
+	background-image:url(../imagenes/icon_cancha_futbol.png);
+	background-position:0 30px;
+	left: 96px;
+	top: 158px;
+}
+
+#defensa_central_izquierda{
+	position:absolute;
+	background-image:url(../imagenes/icon_cancha_futbol.png);
+	background-position:0 30px;
+	left: 76px;
+	top: 67px;
+}
+
+#defensa_central_derecha{
+	position:absolute;
+	background-image:url(../imagenes/icon_cancha_futbol.png);
+	background-position:0 30px;
+	left: 76px;
+	top: 108px;
+}
+
+#lateral_izquierdo{
+	position:absolute;
+	background-image:url(../imagenes/icon_cancha_futbol.png);
+	background-position:0 30px;
+	left: 96px;
+	top: 17px;
+}
+#volante_derecho{
+	position:absolute;
+	background-image:url(../imagenes/icon_cancha_futbol.png);
+	background-position:0 45px;
+	left: 178px;
+	top: 138px;
+}
+#volante_central{
+	position:absolute;
+	background-image:url(../imagenes/icon_cancha_futbol.png);
+	background-position:0 45px;
+	left: 178px;
+	top: 87px;
+}
+#volante_izquierdo{
+	position:absolute;
+	background-image:url(../imagenes/icon_cancha_futbol.png);
+	background-position:0 45px;
+	left: 178px;
+	top: 37px;
+}
+#extremo_derecho{
+	position:absolute;
+	background-image:url(../imagenes/icon_cancha_futbol.png);
+	background-position:0 0;
+	left: 280px;
+	top: 138px;
+}
+#delantero{
+	position:absolute;
+	background-image:url(../imagenes/icon_cancha_futbol.png);
+	background-position:0 0;
+	left: 295px;
+	top: 87px;
+}
+#extremo_izquierdo{
+	position:absolute;
+	background-image:url(../imagenes/icon_cancha_futbol.png);
+	background-position:0 0;
+	left: 279px;
+	top: 37px;
+}

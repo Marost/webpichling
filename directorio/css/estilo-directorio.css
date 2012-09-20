@@ -1,0 +1,194 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, caption{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';	content: none;}
+:focus {outline: 0;}
+ins {text-decoration: none;}
+del {text-decoration: line-through;}
+
+/*---------------------------------------------------*/
+/* ESTILOS GENEREALES */
+
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background-color:#CCC;
+}
+
+#cabecera, #contenido{
+	width:100%;
+	float:left;
+}
+
+#interior{
+	width:950px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#cabecera-logo{
+	width:930px;
+	height:30px;
+	padding:10px;
+	float:left;
+	background-color:#900;
+	text-align:center;
+	font-size:28px;
+	color:#FFF;
+	font-weight:bold;
+}
+
+#cabecera-buscar{
+	width:930px;
+	height:20px;
+	padding:10px;
+	float:left;
+	background-color:#CCC;
+	text-align:right;
+}
+
+#contenido-items{
+	width:930px;
+	float:left;
+	padding:10px 10px 10px 10px;
+}
+
+#item-archivo{
+	width:175px;
+	float:left;
+	margin:5px;
+	background-color:#E6E6E6;
+}
+
+#item-archivo-icon,
+#item-archivo-texto,
+#item-archivo-acciones{
+	width:165px;
+	float:left;
+	padding:5px;
+	text-align:center;
+}
+
+/*---------------------------------------------------------------*/
+/*MENU*/
+ul#navmenu,
+ul#navmenu li,
+ul#navmenu ul {
+	margin: 0;
+	padding: 0;
+	width: 135px;
+	list-style: none;
+	z-index:4;
+}
+
+ul#navmenu li {
+	display: block !important;
+	display: inline;
+	position: relative;
+}
+
+ul#navmenu a {
+	border: 1px solid #FFF;
+	text-transform:uppercase;
+	padding: 10px 6px;
+	display: block;
+	background:url(../images/fondo-menu-out-oscuro.png);
+	color: #fff;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	text-decoration: none;
+}
+
+ul#navmenu a:hover,
+ul#navmenu li:hover a,
+ul#navmenu li.iehover a {
+  background:url(../images/fondo-menu-over-oscuro.png);
+  color: #000;
+}
+
+ul#navmenu li:hover li a,
+ul#navmenu li.iehover li a {
+  background:url(../images/fondo-menu-out-oscuro.png);
+  color: #fff;
+}
+
+ul#navmenu li:hover li a:hover,
+ul#navmenu li:hover li:hover a,
+ul#navmenu li.iehover li a:hover,
+ul#navmenu li.iehover li.iehover a {
+  background:url(../images/fondo-menu-over-oscuro.png);
+  color: #000;
+}
+
+ul#navmenu li:hover li:hover li a,
+ul#navmenu li.iehover li.iehover li a {
+  background: #EEE;
+  color: #666;
+}
+
+ul#navmenu li:hover li:hover li a:hover,
+ul#navmenu li:hover li:hover li:hover a,
+ul#navmenu li.iehover li.iehover li a:hover,
+ul#navmenu li.iehover li.iehover li.iehover a {
+  background: #CCC;
+  color: #FFF;
+}
+
+ul#navmenu li:hover li:hover li:hover li a,
+ul#navmenu li.iehover li.iehover li.iehover li a {
+  background: #EEE;
+  color: #666;
+}
+
+ul#navmenu li:hover li:hover li:hover li a:hover,
+ul#navmenu li.iehover li.iehover li.iehover li a:hover {
+  background: #CCC;
+  color: #FFF;
+}
+
+ul#navmenu ul,
+ul#navmenu ul ul,
+ul#navmenu ul ul ul {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 135px;
+
+}
+
+ul#navmenu li:hover ul ul,
+ul#navmenu li:hover ul ul ul,
+ul#navmenu li.iehover ul ul,
+ul#navmenu li.iehover ul ul ul { display: none;}
+
+ul#navmenu li:hover ul,
+ul#navmenu ul li:hover ul,
+ul#navmenu ul ul li:hover ul,
+ul#navmenu li.iehover ul,
+ul#navmenu ul li.iehover ul,
+ul#navmenu ul ul li.iehover ul { display: block;}
+
+/*---------------------------------*/
+/* CLASES DE TEXTO */
+.texto_blanco12-Arial {color: #FFF;}
+.texto_rojo{ color:#F00;}
+

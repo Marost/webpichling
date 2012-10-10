@@ -1,6 +1,6 @@
 <?php
 include("admin/conexion/conexion.php");
-require_once("libs/youtube/youtube.class.php");
+include("libs/ssdtube/SSDTube.php");
 header("Content-Type: text/html; charset=utf-8");
 
 	//JUGADORES
@@ -71,8 +71,8 @@ header("Content-Type: text/html; charset=utf-8");
               <td align="center"><a href="http://www.youtube.com/watch?v=AmLOClQn6yg" rel="vidbox" title="Humberto Osorio Botello"> <img src="imagenes/videos/humberto_osorio.jpg" alt="" width="120" height="90" /><br />
                 Humberto Osorio Botello</a></td>
               <td align="center"><a href="http://www.youtube.com/watch?v=gtFU5Rh4XMc" rel="vidbox" title="Pedro Ascoy">
-                <?php $youtube_pascoy= new Youtube("http://www.youtube.com/watch?v=gtFU5Rh4XMc"); ?>
-                <img src="<?php echo $youtube_pascoy->getImageUrl(0)?>" width="120" height="90" alt="Pedro Ascoy" /> <br />
+                <?php $youtube_pascoy = new SSDTube(); $youtube_pascoy->identify("http://www.youtube.com/watch?v=gtFU5Rh4XMc", true); ?>
+                <img src="<?php echo $youtube_pascoy->thumbnail_1_url; ?>" width="120" height="90" alt="Pedro Ascoy" /> <br />
                 Pedro Ascoy</a></td>
               </tr>
             <tr>
@@ -114,8 +114,8 @@ header("Content-Type: text/html; charset=utf-8");
                 <a href="http://www.youtube.com/watch?v=Mqf3KiswHe4" rel="vidbox" title="Ricky Perez">
                   <img src="imagenes/videos/ricky_perez.jpg" width="120" height="90" alt="RICKY PEREZ" /><br />Ricky Perez</a></td>
               <td align="center"><a href="http://www.youtube.com/watch?v=LPi_aQfc078" rel="vidbox" title="Rai Gomez">
-                <?php $youtube_raigomez= new Youtube("http://www.youtube.com/watch?v=LPi_aQfc078"); ?>
-                <img src="<?php echo $youtube_raigomez->getImageUrl(0)?>" width="120" height="90" alt="Rai Gomez" /> <br />
+                <?php $youtube_raigomez = new SSDTube(); $youtube_raigomez->identify("http://www.youtube.com/watch?v=LPi_aQfc078", true); ?>
+                <img src="<?php echo $youtube_raigomez->thumbnail_1_url; ?>" width="120" height="90" alt="Rai Gomez" /> <br />
                 Rai Gomez</a></td>
               <td width="171" align="center"><a href="http://www.youtube.com/watch?v=8veQn3Z0To0" rel="vidbox" title="Renzo Benavides"> <img src="imagenes/videos/renzo_benavides.jpg" alt="Renzo Benavides" width="120" height="90" /><br />
                 Renzo Benavides</a></td>
@@ -140,30 +140,30 @@ header("Content-Type: text/html; charset=utf-8");
               <td align="center"><a href="http://www.youtube.com/watch?v=tkj-Cdmavms" rel="vidbox" title="Joel Pinto"> <img src="imagenes/videos/pinto.jpg" alt="Joel Pinto" width="120" height="90" /><br />
                 Joel Pinto</a></td>
               <td align="center"><a href="http://www.youtube.com/watch?v=xmYDMPWZHrM" rel="vidbox" title="Jorge Leiva">
-                <?php $youtube_jorgeleiva= new Youtube("http://www.youtube.com/watch?v=xmYDMPWZHrM"); ?>
-                <img src="<?php echo $youtube_jorgeleiva->getImageUrl(0)?>" width="120" height="90" alt="Jorge Leiva" /> <br />
+                <?php $youtube_jorgeleiva = new SSDTube(); $youtube_jorgeleiva->identify("http://www.youtube.com/watch?v=xmYDMPWZHrM", true); ?>
+                <img src="<?php echo $youtube_jorgeleiva->thumbnail_1_url; ?>" width="120" height="90" alt="Jorge Leiva" /> <br />
                 Jorge Leiva</a></td>
               <td align="center"><a href="http://www.youtube.com/watch?v=IeXAU8Hul0U" rel="vidbox" title="Jair Gonzales">
-                <?php $youtube_jairgonza= new Youtube("http://www.youtube.com/watch?v=IeXAU8Hul0U"); ?>
-                <img src="<?php echo $youtube_jairgonza->getImageUrl(0)?>" width="120" height="90" alt="Jair Gonzales" /> <br />
+                <?php $youtube_jairgonza = new SSDTube(); $youtube_jairgonza->identify("http://www.youtube.com/watch?v=IeXAU8Hul0U", true); ?>
+                <img src="<?php echo $youtube_jairgonza->thumbnail_1_url; ?>" width="120" height="90" alt="Jair Gonzales" /> <br />
                 Jair Gonzales </a></td>
               </tr>
             <tr>
               <td align="center"><a href="http://www.youtube.com/watch?v=pSd0kTo14kI" rel="vidbox" title="Oscar Vilchez - Parte 1">
-                <?php $youtube_oscarvilchez1= new Youtube("http://www.youtube.com/watch?v=pSd0kTo14kI"); ?>
-                <img src="<?php echo $youtube_oscarvilchez1->getImageUrl(0)?>" width="120" height="90" alt="Oscar Vilchez - Parte 1" /> <br />
+                <?php $youtube_oscarvilchez1 = new SSDTube(); $youtube_oscarvilchez1->identify("http://www.youtube.com/watch?v=pSd0kTo14kI", true); ?>
+                <img src="<?php echo $youtube_oscarvilchez1->thumbnail_1_url; ?>" width="120" height="90" alt="Oscar Vilchez - Parte 1" /> <br />
                 Oscar Vilchez - Parte 1</a></td>
               <td align="center"><a href="http://www.youtube.com/watch?v=W26ojy_9lZk" rel="vidbox" title="Oscar Vilchez - Parte 2">
-                <?php $youtube_oscarvilchez2= new Youtube("http://www.youtube.com/watch?v=W26ojy_9lZk"); ?>
-                <img src="<?php echo $youtube_oscarvilchez2->getImageUrl(0)?>" width="120" height="90" alt="Oscar Vilchez - Parte 2" /> <br />
+                <?php $youtube_oscarvilchez2 = new SSDTube(); $youtube_oscarvilchez2->identify("http://www.youtube.com/watch?v=W26ojy_9lZk", true); ?>
+                <img src="<?php echo $youtube_oscarvilchez2->thumbnail_1_url; ?>" width="120" height="90" alt="Oscar Vilchez - Parte 2" /> <br />
                 Oscar Vilchez - Parte 2</a></td>
               <td align="center"><a href="http://www.youtube.com/watch?v=F3yngMs1c90" rel="vidbox" title="Walter Vilchez">
-                <?php $youtube_waltervilchez= new Youtube("http://www.youtube.com/watch?v=F3yngMs1c90"); ?>
-                <img src="<?php echo $youtube_waltervilchez->getImageUrl(0)?>" width="120" height="90" alt="Walter Vilchez" /><br />
+                <?php $youtube_waltervilchez = new SSDTube(); $youtube_waltervilchez->identify("http://www.youtube.com/watch?v=F3yngMs1c90", true); ?>
+                <img src="<?php echo $youtube_waltervilchez->thumbnail_1_url; ?>" width="120" height="90" alt="Walter Vilchez" /><br />
                 Walter Vilchez</a></td>
               <td align="center"><a href="http://www.youtube.com/watch?v=aFi2AgLABeE" rel="vidbox" title="Henry Quinteros">
-                <?php $youtube_waltervilchez= new Youtube("http://www.youtube.com/watch?v=aFi2AgLABeE"); ?>
-                <img src="<?php echo $youtube_waltervilchez->getImageUrl(0)?>" width="120" height="90" alt="Henry Quinteros" /><br />
+                <?php $youtube_waltervilchez = new SSDTube(); $youtube_waltervilchez->identify("http://www.youtube.com/watch?v=aFi2AgLABeE", true); ?>
+                <img src="<?php echo $youtube_waltervilchez->thumbnail_1_url; ?>" width="120" height="90" alt="Henry Quinteros" /><br />
                 Henry Quinteros</a></td>
               </tr>
           </table>

@@ -166,23 +166,23 @@ $fila_posicion=mysql_fetch_array($rst_posicion);
             <td width="200" class="titulo_tabla">CLUB</td>
           </tr>
           <tr>
-            <td height="20" bgcolor="#006699" class="anio_tabla">2010</td>
+            <td height="20" bgcolor="#006699" class="anio_tabla">2012</td>
             <td height="20" valign="middle" class="dato_tabla"><?php echo $fila_jugador["club1"]; ?></td>
           </tr>
           <tr>
-            <td height="20" bgcolor="#006699" class="anio_tabla">2009</td>
+            <td height="20" bgcolor="#006699" class="anio_tabla">2011</td>
             <td height="20" valign="middle" class="dato_tabla"><?php echo $fila_jugador["club2"]; ?></td>
           </tr>
           <tr>
-            <td height="20" bgcolor="#006699" class="anio_tabla">2008</td>
+            <td height="20" bgcolor="#006699" class="anio_tabla">2010</td>
             <td height="20" valign="middle" class="dato_tabla"><?php echo $fila_jugador["club3"]; ?></td>
           </tr>
           <tr>
-            <td height="20" bgcolor="#006699" class="anio_tabla">2007</td>
+            <td height="20" bgcolor="#006699" class="anio_tabla">2009</td>
             <td height="20" valign="middle" class="dato_tabla"><?php echo $fila_jugador["club4"]; ?></td>
           </tr>
           <tr>
-            <td height="20" bgcolor="#006699" class="anio_tabla">2006</td>
+            <td height="20" bgcolor="#006699" class="anio_tabla">2008</td>
             <td height="20" valign="middle" class="dato_tabla"><?php echo $fila_jugador["club5"]; ?></td>
           </tr>
         </table></td>

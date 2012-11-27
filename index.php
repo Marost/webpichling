@@ -142,7 +142,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
            	  <!--FIN CABECERA TITULO -->
               <div id="contenido-entrevista2">
                	  	<div class="texto_fnd-plomo_negro" id="texto-entrevista-inf">
-                  		<object width="625" height="390"><param name="movie" value="http://www.youtube.com/v/MSLX89JVgIM?version=3&amp;hl=es_ES&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/MSLX89JVgIM?version=3&amp;hl=es_ES&amp;rel=0" type="application/x-shockwave-flash" width="625" height="390" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+                  		<iframe width="625" height="390" src="http://www.youtube.com/embed/NmGKpqUGeq4?rel=0" frameborder="0" allowfullscreen></iframe>
 			 	  </div><!--FIN TEXTO ENTREVISTA INFERIOR -->
               </div><!--FIN CONTENIDO ENTREVISTA -->
           </div><!--FIN ENTREVISTA -->

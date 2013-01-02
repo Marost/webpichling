@@ -146,6 +146,10 @@ header("Content-Type: text/html; charset=utf-8");
                 <img src="<?php echo $youtube_jorgeleiva->thumbnail_1_url; ?>" width="120" height="90" alt="Jorge Leiva" /> <br />
                 Jorge Leiva</a></td>
               <td align="center">
+              	<a href="http://www.youtube.com/watch?v=KaTESKIkJXs" rel="vidbox" title="Edson Uribe">
+					<?php $youtube_ramonrodriguez = new SSDTube(); $youtube_ramonrodriguez->identify("http://www.youtube.com/watch?v=KaTESKIkJXs", true); ?>
+                    <img src="<?php echo $youtube_ramonrodriguez->thumbnail_1_url; ?>" width="120" height="90" alt="Edson Uribe" /><br />
+                    Edson Uribe</a>
               		<!--<a href="http://www.youtube.com/watch?v=IeXAU8Hul0U" rel="vidbox" title="Jair Gonzales">
 					?php $youtube_jairgonza=new SSDTube(); $youtube_jairgonza->identify("http://www.youtube.com/watch?v=IeXAU8Hul0U", true); ?>
                     <img src="?php echo $youtube_jairgonza->thumbnail_1_url; ?>" width="120" height="90" alt="Jair Gonzales" /> <br />
@@ -170,10 +174,10 @@ header("Content-Type: text/html; charset=utf-8");
                 <img src="<?php echo $youtube_waltervilchez->thumbnail_1_url; ?>" width="120" height="90" alt="Henry Quinteros" /><br />
                 Henry Quinteros</a></td>
 				<td align="center">
-            	<a href="http://www.youtube.com/watch?v=lLqPAu02gVY" rel="vidbox" title="Ramón Rodríguez">
-					<?php $youtube_ramonrodriguez = new SSDTube(); $youtube_ramonrodriguez->identify("http://www.youtube.com/watch?v=lLqPAu02gVY", true); ?>
-                    <img src="<?php echo $youtube_ramonrodriguez->thumbnail_1_url; ?>" width="120" height="90" alt="Ramón Rodríguez" /><br />
-                    Ramón Rodríguez</a>
+            	<a href="http://www.youtube.com/watch?v=jYAtcyzvsDQ" rel="vidbox" title="Leo Aguilar">
+					<?php $youtube_ramonrodriguez = new SSDTube(); $youtube_ramonrodriguez->identify("http://www.youtube.com/watch?v=jYAtcyzvsDQ", true); ?>
+                    <img src="<?php echo $youtube_ramonrodriguez->thumbnail_1_url; ?>" width="120" height="90" alt="Leo Aguilar" /><br />
+                    Leo Aguilar</a>
                 </td>
               </tr>
           </table>

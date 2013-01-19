@@ -180,6 +180,18 @@ header("Content-Type: text/html; charset=utf-8");
                     Leo Aguilar</a>
                 </td>
               </tr>
+              <tr>
+                <td align="center">
+                  <a href="http://www.youtube.com/watch?v=3lLG3BlzhZQ" rel="vidbox" title="Pedro Gutiérrez ">
+                    <?php $youtube_pedrogutierrez = new SSDTube(); $youtube_pedrogutierrez->identify("http://www.youtube.com/watch?v=3lLG3BlzhZQ", true); ?>
+                    <img src="<?php echo $youtube_pedrogutierrez->thumbnail_1_url; ?>" width="120" height="90" alt="Pedro Gutiérrez" /><br />
+                    Pedro Gutiérrez</a>
+                </td>
+                <td align="center"></td>
+                <td align="center"></td>
+                <td align="center"></td>
+                <td align="center"></td>
+              </tr>
           </table>
         </div>
         <div class="TabbedPanelsContent">
